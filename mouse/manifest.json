@@ -8,6 +8,6 @@
 	"96": "icons/96.png"
 	},
 	"background": {
-	"scripts": ["content_scripts/context-menu.js"]
+	"scripts": ["mywords.jar"]
 	}
 }
