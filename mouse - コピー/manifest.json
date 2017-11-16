@@ -23,6 +23,14 @@
       "96": "icons/96.png",
       "48": "icons/48.png",
    },
+  "permissions": [
+        "tabs",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "storage"
+  ],
   "browser_action": {
     "default_icon": {
       "48": "icons/48.png",
@@ -32,7 +40,15 @@
   "content_scripts": [
   {
     "matches": ["http://*/*", "https://*/*"],
-    "js": ["context-menu.js"]
+    "js": ["ext-onetab-concatenated-sources-contentscript.js"]
   }
   ],
+
+  "background": {
+    "scripts": ["ext-onetab-concatenated-sources-background.js"]
+  }
+
+    
+
+
 }
